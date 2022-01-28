@@ -1,0 +1,38 @@
+body {
+  background: rgb(144, 144, 255);
+}
+
+
+header {
+  color: white;
+  font: normal 15pt Serif;
+  text-align: center;
+}
+
+
+section {
+  background: rgb(210, 210, 210);
+  border-radius: 20pt;
+  padding: 16pt;
+  width: 400pt;
+  margin: auto;
+  box-shadow: 7pt 7pt 5pt rgb(0, 0, 0, 0.300);
+  
+}
+
+
+p#marca {
+  color: white;
+  font: normal 10pt Normal;
+  text-align: center;
+}
+
+
+div {
+  text-align: center;
+}
+
+
+p#relógio {
+  font: normal 20pt Normal;
+} 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width-device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documento</title>
+  </head>
+  <body onLoad="loop()">
+    <div id="divisão">
+    </div>
+    <script>
+      function loop() {
+        document.createElement("p")
+        var parágrafo = document.getElementsByName("p")[0]
+        var divisão = document.getElementById("divisão")
+        var i = 0
+        while (i < 30) {
+          parágrafo.innerHTML = `${i}`
+          divisão.appendChild(parágrafo)
+          i++
+        }
+      }
+    </script>
+  </body>
+</html>

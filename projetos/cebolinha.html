@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+		<meta charset="UTF-8">
+		<title>Cebolinha</title>
+</head>
+<body>
+		<!--><script>
+				function mudarTexto() {
+						var texto = entradaTxt.value
+						var textoMod = ""
+						for (var n = 0; n < texto.length; n++) {
+								if (texto[n] == "r") {
+										textoMod += "l"
+								} else if (texto[n] == "R") {
+										textoMod += "L"
+								} else {
+										textoMod += texto[n]
+								}
+						}
+						textoMod = textoMod.trim()
+						if (textoMod != "") {
+					 	  saída.innerHTML = textoMod
+						} 
+				}
+				
+				var body = document.body
+				body.style.background = "#95a2ff"
+				
+				var caixa = document.createElement("section")
+				caixa.style.background = "#ffffff"
+				caixa.style.borderRadius = "11px"
+				caixa.style.padding = "17px"
+				caixa.style.margin = "auto"
+				caixa.style.width = "400px"
+				caixa.style.height = "500px"
+				caixa.style.boxShadow = "7px 7px 7px #4d4d4d"
+				
+				var txt01 = document.createElement("p")
+				txt01.innerHTML = "insira o texto aqui"
+				
+				var entradaTxt = document.createElement("input")
+				entradaTxt.type = "string"
+				entradaTxt.style.borderRadius = "5px"
+				entradaTxt.style.width = "395px"
+				
+				var txt02 = document.createElement("p")
+				txt02.innerHTML = "saída:"
+				
+				var botão = document.createElement("input")
+				botão.type = "button"
+				botão.value = "gerar texto"
+				botão.addEventListener("click", mudarTexto)
+				
+				var saída = document.createElement("p")
+				saída.style.background = "#dcdcdc"
+				saída.style.textAlign = "left"
+				saída.style.borderRadius = "5px"
+				saída.innerHTML = "aguardando..."
+				
+				caixa.appendChild(txt01)
+				caixa.appendChild(entradaTxt)
+				caixa.appendChild(botão)
+				caixa.appendChild(txt02) 
+				caixa.appendChild(saída)
+				body.appendChild(caixa)
+		</script></!-->
+</body>
+</html>

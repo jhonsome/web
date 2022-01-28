@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap');
+
+:root {
+  --color1: #252935;
+  --color2: #46495A;
+  --color3: #798098;
+  --color4: #8B8BAE;
+  --font: "Advent Pro", cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-size: 22px;
+  background-color: var(--color4);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+  padding: 20px 10px;
+  max-width: 600px;
+  min-width: 300px;
+  margin: auto;
+}
+
+main h1 {
+  font-family: var(--font);
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+main input[type=tel], main textarea {
+  margin: 10px 0px;
+  padding: 5px;
+  width: 100%;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+main input::placeholder {
+  color: red;
+  opacity: 1;
+  font-weight: 300;
+}
+
+main div.boxbutton {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  grid-column-gap: 5px;
+  border: none;
+  padding: 0px;
+}
+
+main input[type=button] {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2em;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  background-color: var(--color3);
+}
+
+main div {
+  min-height: 1em;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0px;
+  word-break: break-all;
+}
+
+main hr {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 1px;
+  font-size: 1.5em;
+}
+
+footer {
+  background-color: var(--color1);
+  background-image: linear-gradient(to top, var(--color1), var(--color2));
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+}
+
+footer > p {
+  padding-bottom: 10px;
+  font-size: 0.8em;
+}

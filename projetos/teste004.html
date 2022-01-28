@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+		<meta charset="UTF-8">
+		<title>Título da página</title>
+		<style>
+				body {
+						background: #5db96e;
+				}
+				
+				canvas {
+				  border: 1px solid #1100ff;
+				  padding: 1px;
+				} 
+		</style>
+</head>
+<body>
+		<canvas id="c1" width="300px" height="300px"></canvas>
+		<script>
+				var X = 0
+				
+				function desenhar() {
+				  var canvas = document.getElementById("c1")
+				  ctx = canvas.getContext("2d")
+				  ctx.fillStyle = "#ffffff"
+				  ctx.fillRect(0, 0, canvas.width, canvas.height)
+				  ctx.fillStyle = "#ff000a"
+				  ctx.fillRect(X, 0, 20, 20)
+				  if (X >= canvas.width - 20) {
+				  		X = 0
+				  }
+				  X += 2
+				}
+				
+				setInterval(desenhar, 10)
+		</script>
+</body>
+</html>

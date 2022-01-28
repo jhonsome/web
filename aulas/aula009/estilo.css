@@ -1,0 +1,39 @@
+body {
+  background: rgb(144, 144, 255);
+  font: normal 13pt Arial;
+}
+
+
+header {
+  color: white;
+  font: normal 20pt Casual;
+  text-align: center;
+}
+
+
+section {
+  background: rgb(230, 230, 230);
+  border-radius: 20pt;
+  padding: 16pt;
+  width: 400pt;
+  margin: auto;
+  box-shadow: 7pt 7pt 5pt rgb(0, 0, 0, 0.300);
+  
+}
+
+
+footer {
+  color: white;
+  font: normal 10pt Itálic;
+  text-align: center;
+}
+
+
+div {
+  text-align: center;
+}
+
+
+div#botão {
+  text-align: left;
+} 
