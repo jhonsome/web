@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/6ab539c6fc2b21ff0b149b3d06d7f97c?family=Minecraft);
 
 :root {
   --color1: #252935;
@@ -6,6 +7,7 @@
   --color3: #798098;
   --color4: #8B8BAE;
   --font: "Advent Pro", cursive;
+  --minefont: "Minecraft", sans-serif;
 }
 
 * {
@@ -18,16 +20,26 @@ html, body {
 }
 
 body {
-  font-size: 22px;
+  font-size: 18px;
   background-color: var(--color4);
   font-family: 'Times New Roman', Times, serif;
 }
 
+body a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+body a:hover {
+	text-decoration: underline;
+}
+
 main {
-  padding: 20px 10px;
-  max-width: 600px;
-  min-width: 300px;
+  padding: 10px;
   margin: auto;
+  min-width: 300px;
+  max-width: 600px;
 }
 
 main h1 {
@@ -35,9 +47,47 @@ main h1 {
   font-weight: normal;
 }
 
-main input[type=tel], main textarea {
-  margin: 10px 0px;
-  padding: 5px;
+main table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px 0px;
+}
+
+main table caption {
+	padding: 10px;
+	font-weight: bold;
+}
+
+main table td, th {
+	border: 2px solid #000000;
+	text-align: center;
+	padding: 10px;
+}
+
+main table th {
+	background-color: var(--color3);
+}
+
+main table td {
+	background-color: #FFFFFF;
+}
+
+main table td > div.smallbox {
+	width: 1em;
+	height: 1em;
+	margin: 0px;
+	padding: 0px;
+	min-height: 0px;
+	border: 1px solid #000000;
+	border-radius: 0px;
+} 
+
+main p {
+  padding: 10px 0px;
+} 
+
+main textarea {
+  padding: 10px;
   width: 100%;
   font-size: 1.2em;
   box-sizing: border-box;
@@ -46,27 +96,12 @@ main input[type=tel], main textarea {
   background-color: #FFFFFF;
 }
 
-main input::placeholder {
-  color: red;
-  opacity: 1;
-  font-weight: 300;
-}
-
-main div.boxbutton {
-  display: grid;
-  grid-template-columns: 10fr 1fr;
-  grid-column-gap: 5px;
-  border: none;
-  padding: 0px;
-}
-
 main input[type=button] {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   border: 2px solid #FFFFFF;
   border-radius: 10px;
   background-color: var(--color3);
-  font-size: 1.2em;
 }
 
 main div {
@@ -76,9 +111,12 @@ main div {
   padding: 10px;
   margin: 10px 0px;
   word-break: break-all;
+  font-family: var(--minefont);
+  font-weight: normal;
 }
 
 main hr {
+  margin: 10px 0px;
   border: 1px solid #FFFFFF;
   background-color: #FFFFFF;
   border-radius: 1px;
@@ -93,15 +131,16 @@ footer {
 }
 
 footer > p {
-  padding: 10px;
+	padding: 10px;
 }
 
 footer a {
   text-decoration: none;
-  font-weight: bold;
   color: #FFFFFF;
+  font-weight: bold;
 }
 
 footer a:hover {
   text-decoration: underline;
+  transition: 300ms;
 }
