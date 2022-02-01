@@ -94,7 +94,8 @@ function FormatText() {
 	
 	text = SecureText(text)
 	for (let value of data["format_table"]) {
-		matches = text.matchAll(new RegExp(value[0] + re, "g"))
+		matches = text.matchAll(new RegExp(value[0].slice(0, 2) + re, "g"))
+		
 		
 		if (value[0].slice(0, 2) == "§k") {
 			for (let match of matches) {
