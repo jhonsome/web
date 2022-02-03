@@ -96,10 +96,9 @@ function FormatText() {
 	for (let value of data["format_table"]) {
 		matches = text.matchAll(new RegExp(value[0].slice(0, 2) + re, "g"))
 		
-		
 		if (value[0].slice(0, 2) == "§k") {
 			for (let match of matches) {
-				text = text.replace(match, RandomString("abcdeghnopqsuvxyz", match[0].slice(2).length))
+				text = text.replace(match, RandomString("defghqouy", match[0].slice(2).length))
 			}
 		} else if (value[0].slice(0, 2) == "§l") {
 			for (let match of matches) {
@@ -120,7 +119,7 @@ function FormatText() {
 		}
   } 
 	for (let value of data["color_table"]) {
-		matches = text.matchAll(new RegExp(value[0] + re, "g"))
+		matches = text.matchAll(new RegExp(value[0].slice(0, 2) + re, "g"))
 		for (let match of matches) {
 			text = text.replace(match, `<span style="color: ${value[1]}">${match[0].slice(2)}</span>`)
 		}

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/6ab539c6fc2b21ff0b149b3d06d7f97c?family=Minecraft');
+@font-face {
+	font-family: "Minecraft";
+	src: url("fonts/minecraft.ttf") format("truetype");
+	font-weight: normal;
+}
 
 :root {
   --color1: #252935;
@@ -7,7 +11,7 @@
   --color3: #798098;
   --color4: #8B8BAE;
   --font: "Advent Pro", cursive;
-  --minefont: "Minecraft", monospace;
+  --minefont: Minecraft, monospace;
 }
 
 * {
@@ -112,7 +116,8 @@ main div {
   margin: 10px 0px;
   word-break: break-all;
   font-family: var(--minefont);
-  font-weight: normal;
+  font-weight: normal; 
+  font-size: 1.2em;
 }
 
 main hr {

@@ -1,7 +1,8 @@
 function LoadLists() {
   const web_list = [
     ["Gerador de link para WhatsApp", "projetos/gerador-de-link-whatsapp/index.html"],
-    ["Decorador de texto para Minecraft", "projetos/decorador-de-texto-minecraft"], 
+    ["Decorador de texto para Minecraft", "projetos/decorador-de-texto-minecraft/index.html"], 
+    ["Git Hub ( ͡° ͜ʖ ͡°)", "projetos/git-hub/index.html"], 
     ["Harmonia de cores", "projetos/harmonia-de-cores/index.html"], 
     ["Minhas redes sociais", "projetos/minhas-redes-sociais/index.html"], 
     ["Projeto Android Curso em Vídeo", "projetos/projeto-android-curso-em-video/android.html"],
