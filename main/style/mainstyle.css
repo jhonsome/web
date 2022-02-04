@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&display=swap');
+
+:root {
+  --color1: #252935;
+  --color2: #46495A;
+  --color3: #798098;
+  --color4: #8B8BAE;
+  --hfont: "Advent Pro", cursive;
+  --mfont: "Times New Romam", Times, serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-size: 22px;
+  background-color: var(--color4);
+  font-family: var(--mfont);
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+p {
+  margin: 10px 0px;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--hfont);
+	font-weight: normal;
+}
+
+header {
+	padding: 20% 10%;
+  background-color: var(--color1);
+  background-image: linear-gradient(to bottom, var(--color2), var(--color1));
+  color: #FFFFFF;
+}
+
+nav {
+	padding: 10px 0px;
+	color: #FFFFFF;
+	background-color: var(--color1);
+}
+
+nav > a {
+	padding: 10px;
+}
+
+nav > a:hover {
+	background-color: var(--color3);
+	border-radius: 10px;
+}
+
+main {
+  padding: 10px;
+  max-width: 600px;
+  min-width: 300px;
+  margin: auto;
+}
+
+hr {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 1px;
+}
+
+footer {
+  background-color: var(--color1);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0px;
+	font-size: 1.2em;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+input[type=button] {
+	background-color: var(--color3);
+}
+
+table {
+	margin: 10px 0px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table > caption {
+	font-weight: bold;
+}
+
+table td, th {
+	border: 2px solid #000000;
+	padding: 10px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+table th {
+	background-color: var(--color3);
+}
+
+table td.number {
+	text-align: right;
+}
+
+footer {
+	background-color: var(--color1);
+	background-image: linear-gradient(to top, var(--color2), var(--color1));
+} 

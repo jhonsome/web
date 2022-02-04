@@ -125,7 +125,7 @@ function FormatText() {
 		}
 	} 
 	text = text.replaceAll("§r", "")
-	text = text.replaceAll("\n", "<br>")
+	text = text.replaceAll("\n", " ")
 	output.innerHTML = text
 }
 

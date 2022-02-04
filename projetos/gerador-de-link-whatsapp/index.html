@@ -5,20 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gerador de Link para WhatsApp</title>
+  <style>
+  	@import url("https://jhonsome.github.io/web/main/style/mainstyle.css");
+  </style>
   <link rel="stylesheet" href="style.css">
   <script src="main.js"></script>
 </head>
 <body>
+	<header>
+		<h1>Gerador de link para WhatsApp</h1>
+	</header>
+	<nav>
+		<a href="https://jhonsome.github.io/web/">Home</a>
+	</nav>
   <main>
-    <h1>Número de telefone</h1>
+    <h2>Número de telefone</h2>
     <hr>
     <input type="tel" id="phone_input">
-    <h1>Texto</h1>
+    <h2>Texto</h2>
     <hr>
     <textarea id="text_input" rows="15"></textarea>
-    <h1>Link</h1>
+    <h2>Link</h2>
     <hr>
-    <div class="boxbutton">
+    <div id="boxbutton">
       <input type="button" value="gerar link" onclick="GenerateWhatsAppLink()">
       <input type="button" value="&#x1F4CB;" onclick="CopyToClipboard(document.getElementById('link_output'))">
     </div>
