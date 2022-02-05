@@ -47,14 +47,3 @@ function FillList(list, node) {
     }
   }
 }
-
-SetMetadata({
-	"author": "Jhon", 
-  "url": "https://jhonsome.github.io/web/", 
-  "description": "Minhas coisinhas, e um pouco sobre mim", 
-  "image": "https://jhonsome.github.io/web/homepage/preview.jpg", 
-  "type": "website", 
-  "locale": "pt_BR"
-}, document.head)
-
-console.log(document.head)

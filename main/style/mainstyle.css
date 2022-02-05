@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	padding: 20% 10%;
+	padding: 20% 5%;
   background-color: var(--color1);
   background-image: linear-gradient(to bottom, var(--color2), var(--color1));
   color: #FFFFFF;
