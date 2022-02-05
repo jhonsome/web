@@ -1,3 +1,5 @@
+@import url("https://jhonsome.github.io/web/main/style/mainstyle.css");
+
 header {
   background-image: url("cat.png"), linear-gradient(to right, #00000082, transparent);
   background-repeat: no-repeat;
