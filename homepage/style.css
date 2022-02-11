@@ -1,4 +1,4 @@
-@import url("https://jhonsome.github.io/web/main/style/mainstyle.css");
+@import url("https://jhonsome.github.io/web/main/mainstyle.css");
 
 header {
   background-image: url("cat.png"), linear-gradient(to right, #00000082, transparent);
@@ -22,18 +22,7 @@ main ul > li > a {
 	color: #000000;
 }
 
-footer .icon {
-	margin: 10px 0px;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  background-size: cover;
-}
-
-footer .github {
-  background-image: url("github_icon.png");
-}
-
-footer .instagram {
-  background-image: url("instagram_icon.png");
+footer i.fa-brands {
+	padding: 10px;
+  font-size: 2em;
 }

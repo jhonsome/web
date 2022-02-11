@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&display=swap');
-
-:root {
-  --color1: #252935;
-  --color2: #46495A;
-  --color3: #798098;
-  --color4: #8B8BAE;
-  --hfont: "Advent Pro", cursive;
-  --mfont: "Times New Romam", Times, serif;
-}
+@import url("styles/defaut_style.css");
 
 * {
   margin: 0px;
@@ -21,8 +12,8 @@ html, body {
 
 body {
   font-size: 22px;
-  background-color: var(--color4);
-  font-family: var(--mfont);
+  background-color: var(--color_4);
+  font-family: var(--defaut_font);
 }
 
 a {
@@ -43,21 +34,21 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--hfont);
+	font-family: var(--heading_font);
 	font-weight: normal;
 }
 
 header {
 	padding: 20% 5%;
-  background-color: var(--color1);
-  background-image: linear-gradient(to bottom, var(--color2), var(--color1));
+  background-color: var(--color_1);
+  background-image: linear-gradient(to bottom, var(--color_2), var(--color_1));
   color: #FFFFFF;
 }
 
 nav {
 	padding: 10px 0px;
 	color: #FFFFFF;
-	background-color: var(--color1);
+	background-color: var(--color_1);
 }
 
 nav > a {
@@ -65,7 +56,7 @@ nav > a {
 }
 
 nav > a:hover {
-	background-color: var(--color3);
+	background-color: var(--color_3);
 	border-radius: 10px;
 }
 
@@ -83,7 +74,7 @@ hr {
 }
 
 footer {
-  background-color: var(--color1);
+  background-color: var(--color_1);
   color: #FFFFFF;
   text-align: center;
   padding: 10px;
@@ -99,7 +90,7 @@ input, textarea {
 }
 
 input[type=button] {
-	background-color: var(--color3);
+	background-color: var(--color_3);
 	border-color: #FFFFFF;
 }
 
@@ -121,7 +112,7 @@ table td, th {
 }
 
 table th {
-	background-color: var(--color3);
+	background-color: var(--color_3);
 }
 
 table td.number {
@@ -129,6 +120,6 @@ table td.number {
 }
 
 footer {
-	background-color: var(--color1);
-	background-image: linear-gradient(to top, var(--color2), var(--color1));
+	background-color: var(--color_1);
+	background-image: linear-gradient(to top, var(--color_2), var(--color_1));
 } 

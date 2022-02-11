@@ -16,9 +16,9 @@ function LoadLists() {
     ["Sei lá", "aulas/aula008/aula008.html"]
   ] 
   const repo_list = [
-    ["HTML e CSS", "https://www.github.com/jhowgit888/web", "_blank"], 
-    ["Python", "https://www.github.com/jhowgit888/python", "_blank"], 
-    ["C++", "https://www.github.com/jhowgit888/cpp", "_blank"]
+    ["HTML e CSS", "https://www.github.com/jhonsome/web", "_blank"], 
+    ["Python", "https://www.github.com/jhonsome/python", "_blank"], 
+    ["C++", "https://www.github.com/jhonsome/cpp", "_blank"]
   ]
   const web_node = document.getElementById("web_list")
   const repo_node = document.getElementById("repo_list")

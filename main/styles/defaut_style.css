@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&display=swap');
+
+:root {
+  --color_1: #252935;
+  --color_2: #46495A;
+  --color_3: #798098;
+  --color_4: #8B8BAE;
+  --heading_font: "Advent Pro", cursive;
+  --defaut_font: "Times New Romam", Times, serif;
+}
