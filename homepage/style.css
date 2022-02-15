@@ -112,6 +112,14 @@ nav a {
   margin-left: 1em;
 }
 
+main > section > h2 {
+	display: inline-block;
+	padding: 0px 0.5em;
+	position: relative;
+	top: -0.9em;
+	background-color: var(--color_5);
+}
+
 main > section > div#projects_list {
 	display: flex;
 	flex-direction: row;
@@ -144,7 +152,6 @@ main > section > div#projects_list > div img:hover {
 	animation: scale-in-anim 300ms ease-in-out;
 	animation-fill-mode: forwards;
 }
-
 
 main > section > div#projects_list > div > h3 {
 	text-align: center;
