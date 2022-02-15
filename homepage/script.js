@@ -2,27 +2,33 @@ let pro_list = [
 	[
 		"GitHub", 
 		"Site para criar logos personalizados inspirado no design daquele site", 
-		"https://jhonsome.github.io/web/projetos/git-hub/"
+		"https://jhonsome.github.io/web/projetos/git-hub/", 
+		"https://jhonsome.github.io/web/projetos/git-hub/preview.jpg"
   ], [
 		"Gerador de link WhatsApp", 
 		"Crie links com texto para contatos do WhatsApp", 
-		"https://jhonsome.github.io/web/projetos/gerador-de-link-whatsapp/"
+		"https://jhonsome.github.io/web/projetos/gerador-de-link-whatsapp/", 
+		"https://jhonsome.github.io/web/projetos/gerador-de-link-whatsapp/preview.jpg"
 	], [
 		"Decorador de texto para Minecraft", 
 		"Pré visualizar as decorações de textos do Minecraft", 
-		"https://jhonsome.github.io/web/projetos/decorador-de-texto-minecraft/"
+		"https://jhonsome.github.io/web/projetos/decorador-de-texto-minecraft/", 
+		"https://jhonsome.github.io/web/projetos/decorador-de-texto-minecraft/preview.jpg"
 	], [
 		"Harmonia de cores", 
 		"Um site pessoal para testes de paletas de cores", 
-		"https://jhonsome.github.io/web/projetos/harmonia-de-cores/"
+		"https://jhonsome.github.io/web/projetos/harmonia-de-cores/", 
+		"https://jhonsome.github.io/web/projetos/harmonia-de-cores/preview.jpg"
 	], [
 		"Projeto Android Curso em Vídeo", 
 		"Site criado durante as aulas do Curso em Vídeo, no YouTube", 
-		"https://jhonsome.github.io/web/projetos/projeto-android-curso-em-video/android.html"
+		"https://jhonsome.github.io/web/projetos/projeto-android-curso-em-video/android.html", 
+		"https://jhonsome.github.io/web/projetos/projeto-android-curso-em-video/preview.jpg"
 	], [
 		"Projeto Cordel Curso em Vídeo", 
 		"Site criado durante as aulas do Curso em Vídeo, no YouTube", 
-		"https://jhonsome.github.io/web/projetos/projeto-cordel-curso-em-video/"
+		"https://jhonsome.github.io/web/projetos/projeto-cordel-curso-em-video/", 
+		"https://jhonsome.github.io/web/projetos/projeto-cordel-curso-em-video/preview.jpg"
 	], [
 		"Cebolinha", 
 		"Troca as letras 'R' por 'L'",
@@ -61,7 +67,7 @@ function LoadProjectsList() {
 		a.href = pro[2]
 		a.target = "_blank"
 		img.src = pro[3]
-		img.alt = pro[0]
+		img.alt = pro[0] + ", pré visualização"
 		img.loading = "lazy"
 		img.className = "scale-out-anim"
 		img.dataset.isVisible = "yes"
