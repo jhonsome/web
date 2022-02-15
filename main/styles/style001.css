@@ -1,4 +1,13 @@
-@import url("styles/defaut_style.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --color_1: #252935;
+  --color_2: #46495A;
+  --color_3: #798098;
+  --color_4: #8B8BAE;
+  --heading_font: Comfortaa, cursive;
+  --defaut_font: Montserrat, sans-serif;
+}
 
 * {
   margin: 0px;

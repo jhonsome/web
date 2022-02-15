@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+	--color_1: #664D41;
+	--color_2: #957B66;
+	--color_3: #FFAF7D;
+	--color_4: #FFC39E;
+	--color_5: #FFD7BE;
+	--color_6: #FFEBDF;
+	--heading_font: Comfortaa, cursive;
+	--defaut_font: Montserrat, sans-serif;
+}
+
+@keyframes link-anim {
+	to {
+		width: 100%;
+		left: 0px;
+	}
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html, body {
+	height: 100vh;
+}
+
+body {
+	background-color: var(--color_5);
+	font-size: 16px;
+	font-family: var(--defaut_font);
+}
+
+body a {
+	display: inline-block;
+	color: #FFFFFF; 
+	position: relative;
+}
+
+body a::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -1px;
+	width: 0px;
+	height: 1px;
+	background-color: var(--color_5);
+}
+
+body a:hover::after {
+	animation: link-anim 300ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+header {
+	background-color: var(--color_2);
+	height: 300px;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	overflow-y: scroll;
+	white-space: nowrap;
+	background-color: #000000;
+	width: 0px;
+	height: 100vh;
+}
+
+main > section {
+	margin: 30px 10px;
+	padding: 10px;
+	border-top: 1px solid var(--color_2);
+}
+
+main > section > h2 {
+	font-family: var(--heading_font);
+}
+
+footer {
+	background-color: var(--color_1);
+	color: var(--color_6);
+	padding: 10px;
+	text-align: center;
+}
+
+footer p {
+	padding: 5px;
+}
+
+footer hr {
+	border: none;
+	border-top: 1px solid #FFFFFF;
+	margin: 10px 0px;
+}
