@@ -94,6 +94,10 @@ footer p {
 	padding: 5px;
 }
 
+footer p.small {
+	font-size: smaller;
+}
+
 footer hr {
 	border: none;
 	border-top: 1px solid #FFFFFF;

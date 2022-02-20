@@ -116,9 +116,9 @@ function OpenWindow(url, name) {
 } 
 
 function FormatCopyDate() {
-	const small = document.querySelector("footer small")
+	const copy = document.querySelector("footer p.small")
 	
-	small.innerText = small.innerText.replace(":[year]:", new Date().getFullYear())
+	copy.innerText = copy.innerText.replace(":[year]:", new Date().getFullYear())
 }
 
 function Main() {

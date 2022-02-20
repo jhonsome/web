@@ -20,7 +20,7 @@
 	<meta name="twitter:description" content="Alguns dos meus projetos aleatórios aqui">
 	<meta name="twitter:image" content="https://jhonsome.github.io/web/main/media/preview.jpg">
 	<script async src="https://kit.fontawesome.com/eb877b1662.js" crossorigin="anonymous"></script>
-	<script src="homepage/script.js"></script>
+	<script defer src="homepage/script.js"></script>
 	<link rel="stylesheet" href="homepage/style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="https://jhonsome.github.io/web/main/media/favicon.ico">
 	<title>Jhon</title>
@@ -44,13 +44,17 @@
 				</ul>
 			</li>
 			<li>Contatos</li>
-			<ul>
-				<li><a href="mailto:jhonsomething888@gmail.com" target="_blank">e-mail</a></li>
-				<li><a href="https://wa.me/message/EJWCBTNCCIZCL1/" target="_blank">WhatsApp</a></li>
-				<li><a href="https://t.me/JhonUxu/" target="_blank">Telegram</a></li>
-			</ul>
+      <li>
+      	<ul>
+      		<li><a href="mailto:jhonsomething888@gmail.com" target="_blank">e-mail</a></li>
+      		<li><a href="https://wa.me/message/EJWCBTNCCIZCL1/" target="_blank">WhatsApp</a></li>
+      		<li><a href="https://t.me/JhonUxu/" target="_blank">Telegram</a></li>
+      	</ul>
+      </li>
 			<li>Projetos</li>
-			<ul id="projects_ul"></ul>
+			<li>
+				<ul id="projects_ul"></ul>
+			</li>
 		</ul>
 	</nav>
 	<main>
@@ -72,7 +76,7 @@
 		</div>
 		<hr>
 		<p>Site criado por <a href="https://github.com/jhonsome/" target="_blank">Jhon</a></p>
-	  <small>&copy; Copyright :[year]: Jhonata, MIT License</small>
+	  <p class="small">&copy; Copyright :[year]: Jhonata, MIT License</p>
 	</footer>
 </body>
 </html>
