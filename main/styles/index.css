@@ -230,7 +230,7 @@ main > section:nth-child(even) > div:nth-of-type(2) > img {
   margin: auto;
   text-align: center;
   background-image: url("../media/no_image.png");
-  background-size: 90%;
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
 }

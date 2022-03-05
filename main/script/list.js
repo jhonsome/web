@@ -109,7 +109,7 @@ function Fill(list) {
     button_share.onclick = () => {
       Share({
         "title": item[0],
-        "text": item[1],
+        "text": item[1] + "\n",
         "url": item[2]
       })
     }
