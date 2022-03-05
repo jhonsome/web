@@ -1,0 +1,289 @@
+@import url("color.css");
+
+@keyframes header-anim {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes main-anim {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: var(--defaut-font);
+  font-size: 18px;
+  color: var(--text-color);
+  background-color: var(--color4);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  font-weight: lighter;
+}
+
+body a,
+body a:visited {
+  position: relative;
+  text-decoration: none;
+  color: var(--color1);
+}
+
+body a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 0px;
+  height: 1px;
+  background-color: var(--color1);
+  transition: 300ms;
+}
+
+body a:hover::after {
+  left: 0px;
+  width: 100%;
+  transition: 300ms;
+}
+
+body button {
+  padding: 10px;
+  border: 1px solid #000000;
+  font-weight: 500;
+  color: #000000;
+  background-color: var(--color1);
+  box-shadow: inset 0px -5px 5px #00000077;
+  transition: 300ms;
+}
+
+body button:disabled {
+  background-color: #565656;
+}
+
+body button:enabled.primary {
+  background-color: var(--color1);
+  color: #000000;
+}
+
+body button:enabled.secondary {
+  background-color: var(--color3);
+  color: #FFFFFF;
+}
+
+body button:enabled:hover {
+  border-color: #FFFFFF;
+}
+
+body button:enabled:active {
+  box-shadow: inset 0px 5px 5px #00000055;
+  transition: 100ms;
+}
+
+header {
+  background-color: var(--color2);
+  background-image: linear-gradient(to left bottom, var(--color4), var(--color2));
+  padding-bottom: 10px;
+}
+
+header > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+  max-width: 800px;
+}
+
+header > nav[data-is-visible="yes"] {
+  animation: header-anim 300ms ease-out 500ms;
+}
+
+header > nav > div.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+header > nav > div.dropdown > div.content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  gap: 1em;
+  top: 150%;
+  left: 0px;
+  z-index: 1;
+  padding: 1em;
+  background-color: var(--color4);
+}
+
+header > nav > div.dropdown > a:hover ~ div.content,
+header > nav > div.dropdown > div.content:hover {
+  display: flex;
+}
+
+header > nav > div.dropdown i {
+  transition: 300ms;
+}
+
+header > nav > div.dropdown > a:hover i {
+  transform: rotate(180deg);
+} 
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+header > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+header > div > div > h1 {
+  font-size: 3em;
+  padding: 10px 0px;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+header > div > div > h1[data-is-visible="yes"] {
+  animation: header-anim 1s cubic-bezier(0, 0.1, 0.2, 1.7) 500ms forwards;
+}
+
+header > div > div > p {
+  color: var(--color1);
+}
+
+header > div > img {
+  width: 400px;
+  padding: 10px;
+  filter: drop-shadow(0px 0px 3px #FFFFFF55);
+}
+
+main > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  padding: 10px 0px;
+}
+
+main > section[data-is-visible="yes"] {
+  animation: main-anim 800ms ease-out;
+}
+
+main > section > div {
+  flex: 1 1 50%;
+}
+
+main > section:nth-child(odd) {
+  flex-wrap: wrap;
+}
+
+main > section:nth-child(even) {
+  flex-wrap: wrap-reverse;
+}
+
+main > section:nth-child(odd) > div:nth-of-type(1),
+main > section:nth-child(even) > div:nth-of-type(2) {
+  background-color: var(--color3);
+}
+
+main > section:nth-child(odd) > div:nth-of-type(1) > img,
+main > section:nth-child(even) > div:nth-of-type(2) > img {
+  display: block;
+  width: 400px;
+  min-width: 400px;
+  min-height: 400px;
+  margin: auto;
+  text-align: center;
+  background-image: url("../media/no_image.png");
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main > section:nth-child(odd) > div:nth-of-type(2),
+main > section:nth-child(even) > div:nth-of-type(1) {
+  text-align: center;
+  padding: 10px;
+}
+
+main > section:nth-child(odd) > div:nth-of-type(2) > h2,
+main > section:nth-child(even) > div:nth-of-type(1) > h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+main > section:nth-child(odd) > div:nth-of-type(2) > p,
+main > section:nth-child(even) > div:nth-of-type(1) > p {
+  padding: 10px 0px;
+}
+
+main > section div.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+main > section div.buttons > * {
+  width: 50%;
+}
+
+footer {
+  background-color: var(--color2);
+  background-image: linear-gradient(to right bottom, var(--color2), var(--color4));
+  padding: 10px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em 10px;
+}
+
+footer > div i {
+  font-size: 1.5em;
+}
+
+footer > p.small {
+  font-size: smaller;
+  text-align: center;
+}

@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Jhon">
   <meta property="og:description" content="Jhon - Alguns dos meus projetos aleatórios aqui">
-  <meta property="og:image" itemprop="image" content="main/media/preview.jpg">
+  <meta property="og:image" itemprop="image" content="https://jhonsome.github.io/web/main/media/preview.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary_large_image">
@@ -18,15 +18,14 @@
   <meta property="twitter:url" content="https://jhonsome.github.io/web/">
   <meta name="twitter:title" content="Jhon">
   <meta name="twitter:description" content="Jhon - Alguns dos meus projetos aleatórios aqui">
-  <meta name="twitter:image" content="main/media/preview.jpg">
+  <meta name="twitter:image" content="https://jhonsome.github.io/web/main/media/preview.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <script defer src="main/script/main.js"></script>
-  <script defer src="main/script/list.js"></script>
-  <link rel="stylesheet" href="main/styles/index.css">
-  <link rel="shortcut icon" type="image/x-icon" href="main/media/favicon.ico">
+  <script defer src="homepage/main.js"></script>
+  <link rel="stylesheet" href="homepage/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://jhonsome.github.io/web/main/media/favicon.ico">
   <title>Jhon</title>
 </head>
-<body onscroll="SetVisibility()" onload="FormatCopyDate(); Highlights('#project-highlight', project_list[0]); Highlights('#tutorial-highlight', tutorial_list[0])">
+<body onscroll="SetVisibility()" onload="FormatCopyDate()">
   <header>
     <nav data-is-visible="yes">
       <div class="dropdown">
@@ -38,54 +37,54 @@
           <a href="mailto:jhonsomething888@gmail.com" target="_blank">E-mail</a>
         </div>
       </div>
-      <a href="project-list.html">Projetos</a>
-      <a href="tutorial-list.html">Tutoriais</a>
-      <a href="class-list.html">Aulas</a>
+      <a href="homepage/prolist.html">Projetos</a>
+      <a href="#">Tutoriais</a>
+      <a href="#">Aulas</a>
     </nav>
     <div>
       <div>
         <h1 data-is-visible="yes">Let's go <br> anywhere</h1>
         <p>Aprendendo e ensinando</p>
       </div>
-      <img src="main/media/cat.png" alt="Gato logo">
+      <img src="homepage/media/cat.png" alt="Gato logo">
     </div>
   </header>
   <main>
-    <section data-is-visible="yes" id="project-highlight">
+    <section data-is-visible="yes">
       <div>
-        <img src="#" alt="Projeto destaque">
+        <img src="homepage/media/cat.png" alt="Gato">
       </div>
       <div>
-        <h2>Projeto destaque</h2>
-        <p>Em breve</p>
+        <h2>Nome do projeto</h2>
+        <p>Descrição do projeto</p>
         <div class="buttons">
-          <button disabled>Visitar esse projeto</button>
-          <button class="secondary" disabled onclick="window.location.href = 'project-list.html'">Ver outros</button>
+          <button>Visitar esse projeto</button>
+          <button class="secondary">Ver outros</button>
         </div>
-      </div>
-    </section>
-    <section data-is-visible="yes" id="tutorial-highlight">
-      <div>
-        <h2>Tutorial destaque</h2>
-        <p>Em breve</p>
-        <div class="buttons">
-          <button disabled>Ver esse tutorial</button>
-          <button class="secondary" disabled onclick="window.location.href = 'tutorial-list.html'">Ver outros tutoriais</button>
-        </div>
-      </div>
-      <div>
-        <img src="#" alt="Tutorial destaque">
       </div>
     </section>
     <section data-is-visible="yes">
       <div>
-        <img src="main/media/shield.png" alt="Gato">
+        <h2>Título do tutorial</h2>
+        <p>Descrição do tutorial</p>
+        <div class="buttons">
+          <button>Ver esse tutorial</button>
+          <button class="secondary">Ver outros tutoriais</button>
+        </div>
       </div>
       <div>
-        <h2>Introdução a HTML</h2>
-        <p>Em breve</p>
+        <img src="homepage/media/cat.png" alt="Gato">
+      </div>
+    </section>
+    <section data-is-visible="yes">
+      <div>
+        <img src="homepage/media/cat.png" alt="Gato">
+      </div>
+      <div>
+        <h2>Nome da aula</h2>
+        <p>Descrição da aula</p>
         <div class="buttons">
-          <button disabled onclick="window.location.href = 'class-list.html'">Começar</button>
+          <button>Começar</button>
         </div>
       </div>
     </section>
@@ -98,7 +97,7 @@
       <a href="https://github.com/jhonsome/" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="mailto:jhonsomething888@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
     </div>
-    <p class="small">Site criado por <a href="https://instagram.com/jhon.something/" target="_blank" translate="no">Jhon</a></p>
+    <p class="small">Site criado por <a href="https://github.com/jhonsome/" target="_blank" translate="no">Jhon</a></p>
     <p id="copy" class="small">&copy; Copyright Jhon :[year]:, MIT license</p>
   </footer>
 </body>
