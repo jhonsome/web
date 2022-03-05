@@ -108,8 +108,9 @@ function Fill(list) {
     button_share.className = "secondary"
     button_share.onclick = () => {
       Share({
-        text: item[1],
-        url: item[2]
+        "title": item[0],
+        "text": item[1],
+        "url": item[2]
       })
     }
     div_buttons.appendChild(button_visit)

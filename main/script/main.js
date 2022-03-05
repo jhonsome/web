@@ -11,10 +11,10 @@ function SetVisibility() {
 }
 
 async function Share(data) {
-  if (navigator.Share === undefined) {
-    alert("Seu navegador não suporta compartilhamento")
-  } else {
+  try {
     await navigator.Share(data)
+  } catch(erro) {
+    alert("Erro! " + erro)
   }
 }
 
