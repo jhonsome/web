@@ -12,7 +12,7 @@ function SetVisibility() {
 
 async function Share(data) {
   try {
-    await navigator.Share(data)
+    await navigator.share(data)
   } catch(erro) {
     alert("Erro! " + erro)
   }
