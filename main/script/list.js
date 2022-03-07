@@ -38,6 +38,12 @@ let project_list = [
 ]
 
 let tutorial_list = [
+  [
+    "Neon 'piscando'", 
+    "Neon com efeito de falha", 
+    "https://jhonsome.github.io/html-css/tutoriais/neon-effect/", 
+    "https://jhonsome.github.io/html-css/tutoriais/neon-effect/media/preview.jpg"
+  ] 
 ]
 
 let class_list = [

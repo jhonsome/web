@@ -176,6 +176,18 @@ footer {
   text-align: center;
 }
 
+footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em 10px;
+}
+
+footer > div i {
+  font-size: 1.5em;
+}
+
 footer > p.small {
   font-size: smaller;
   text-align: center;
