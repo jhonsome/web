@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&display=swap');
 
-body[data-theme="defaut"], body {
+body[data-theme="defaut"],
+body {
   --color1: #FFCC00;
   --color2: #1D1D1D;
   --color3: #272727;

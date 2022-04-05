@@ -14,7 +14,7 @@ async function Share(data) {
   try {
     await navigator.share(data)
   } catch(erro) {
-    alert("Erro! " + erro)
+    await alert("Erro! " + erro)
   }
 }
 

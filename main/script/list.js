@@ -82,7 +82,7 @@ function Fill(list) {
     p.innerText = "Nada aqui :("
     section.appendChild(p)
     main.appendChild(section)
-    return
+    return null
   }
   
   for (let item of list) {
